@@ -17,18 +17,20 @@ MemoryWordWorkshop 是一款创新的单词学习应用，结合了单词记忆�
 
 ## 📱 截图展示
 
-| 单词学习                                          | 播放控制                                          | 歌单管理                                          |
+| 单词学习                                          | 歌单管理                                          | 播放控制                                          |
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 | <img src="docs/screenshot_0.jpg" width="250"> | <img src="docs/screenshot_1.jpg" width="250"> | <img src="docs/screenshot_2.jpg" width="250"> |
 
 ## 🚀 快速开始
 
 ### 前提条件
+
 - Android Studio 2025.1.3+
 - JDK 17+
 - Android SDK 36 (Android 16)
 
 ### 安装步骤
+
 1. 克隆仓库：
     ```bash
     git clone https://github.com/Dawn-666/MemoryWordWorkshop.git
@@ -42,6 +44,7 @@ MemoryWordWorkshop 是一款创新的单词学习应用，结合了单词记忆�
 4. 构建并运行应用
 
 ## 🛠️ 项目结构
+
 ```
 MemoryWordWorkshop/
 ├── app/ # 主应用模块
@@ -55,6 +58,7 @@ MemoryWordWorkshop/
 ├── LICENSE # MIT 许可证
 └── README.md # 项目文档
 ```
+
 ## 🧩 技术栈
 
 - **语言**: Kotlin 100%
@@ -79,6 +83,7 @@ MemoryWordWorkshop/
 5. 打开 Pull Request
 
 ### 贡献指南
+
 - 遵循 [Kotlin 编码规范](https://kotlinlang.org/docs/coding-conventions.html)
 - 为所有公共 API 添加文档注释
 - 为新功能编写单元测试
@@ -91,6 +96,7 @@ MemoryWordWorkshop/
 ## 📬 联系我们
 
 如有任何问题或建议，请联系我们：
+
 - 邮箱: contact@memoryapp.com
 - Twitter: [@MemoryApp](https://twitter.com/MemoryApp)
 - 项目讨论区: [GitHub Discussions](https://github.com/your-username/memory-app/discussions)
