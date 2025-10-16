@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    tools:showIn="@layout/activity_word">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <!--    <View-->
+        <!--        android:id="@+id/current_indicator"-->
+        <!--        android:layout_width="4dp"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:background="@color/blue_primary"-->
+        <!--        android:visibility="invisible" />-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_word_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="abandon" />
+
+            <TextView
+                android:id="@+id/tv_meaning_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/gray_dark"
+                android:textSize="14sp"
+                tools:text="放弃，抛弃" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_play_item"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/des_play"
+            android:padding="6dp"
+            android:src="@drawable/ic_play_blue" />
+
+        <ImageView
+            android:id="@+id/btn_favorite_item"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/des_favorite"
+            android:padding="2dp"
+            android:src="@drawable/ic_favorite_selector" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

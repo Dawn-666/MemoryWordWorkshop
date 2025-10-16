@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">忆词工坊</string>
+
+    <string name="des_back">返回</string>
+    <string name="des_create">创建新列表</string>
+    <string name="des_favorite">收藏</string>
+    <string name="des_list">播放列表</string>
+    <string name="des_next">下一个</string>
+    <string name="des_pause">暂停</string>
+    <string name="des_play">播放</string>
+    <string name="des_prev">上一个</string>
+    <string name="des_tabBar">单词列表栏</string>
+
+    <string name="format_current">第%1$d个</string>
+    <string name="format_total">共%1$d个</string>
+
+    <string name="item_home">首页</string>
+    <string name="item_word">单词</string>
+    <string name="item_play">播放</string>
+    <string name="item_user">我的</string>
+
+    <string name="label_list">@string/des_list</string>
+
+    <string name="switch_chinese">播放中文</string>
+    <string name="switch_english">播放英文</string>
+    <string name="switch_spelling">播放拼写</string>
+
+    <string name="title_list">@string/des_list</string>
+    <string name="title_player">单词播放器</string>
+</resources>
