@@ -18,7 +18,6 @@ import com.tencentmusic.memory.webkit.JavaScriptInterface
 import com.tencentmusic.memory.webkit.init
 import org.json.JSONObject
 import java.io.IOException
-import kotlin.getValue
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
     private val player by playerViewModels()
@@ -69,7 +68,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 override fun shouldInterceptRequest(view: WebView, request: WebResourceRequest): WebResourceResponse? {
                     val url = request.url.toString()
                     Log.d("WebApp", "拦截请求: $url")
-
                     // 处理CSS文件
                     if (url.endsWith(".css")) {
                         try {
@@ -79,7 +77,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                             Log.e("WebApp", "加载CSS失败: ${e.message}")
                         }
                     }
-
                     // 处理JS文件
                     if (url.endsWith(".js")) {
                         try {
@@ -89,8 +86,17 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                             Log.e("WebApp", "加载JS失败: ${e.message}")
                         }
                     }
-
-                    return super.shouldInterceptRequest(view, request)
+                    request.url.let { url ->
+                        if (url.scheme == "file" && url.host != "android_asset") {
+                            val path = ("${url.host}${url.path}").removePrefix("/")
+                            try {
+                                return WebResourceResponse(null, "UTF-8", activity?.assets?.open(if (path.startsWith("h5")) path else "h5/$path"))
+                            } catch (e: Exception) {
+                                Log.e("WebApp", Log.getStackTraceString(e))
+                            }
+                        }
+                    }
+                    return null
                 }
 
                 override fun onPageFinished(view: WebView, url: String) {
