@@ -1,19 +1,14 @@
 # 贡献指南
 
-感谢您考虑为 Memory 应用做出贡献！本指南将帮助您开始贡献流程。
+感谢您考虑为 MemoryWordWorkshop 应用做出贡献！本指南将帮助您开始贡献流程。
 
 ## 如何贡献
 
 ### 报告问题
-- 在 [Issues](https://github.com/your-username/memory-app/issues) 页面创建新 issue
+- 在 [Issues](https://github.com/Dawn-666/MemoryWordWorkshop/issues) 页面创建新 issue
 - 使用清晰描述性的标题
 - 包含重现步骤、预期行为和实际行为
 - 添加相关截图或日志
-
-### 功能请求
-- 在 [Discussions](https://github.com/your-username/memory-app/discussions) 中提出新想法
-- 描述功能解决的问题
-- 建议实现方案（可选）
 
 ### 代码贡献
 1. Fork 仓库

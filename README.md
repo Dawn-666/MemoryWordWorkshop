@@ -17,7 +17,7 @@ MemoryWordWorkshop 是一款创新的单词学习应用，结合了单词记忆�
 
 ## 📱 截图展示
 
-| 单词学习                                          | 歌单管理                                          | 播放控制                                          |
+| 单词学习                                          | 词本管理                                          | 播放控制                                          |
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 | <img src="docs/screenshot_0.jpg" width="250"> | <img src="docs/screenshot_1.jpg" width="250"> | <img src="docs/screenshot_2.jpg" width="250"> |
 
@@ -97,6 +97,4 @@ MemoryWordWorkshop/
 
 如有任何问题或建议，请联系我们：
 
-- 邮箱: contact@memoryapp.com
-- Twitter: [@MemoryApp](https://twitter.com/MemoryApp)
-- 项目讨论区: [GitHub Discussions](https://github.com/your-username/memory-app/discussions)
+- 邮箱: dawn666@qq.com
